@@ -1,0 +1,38 @@
+# tatbench schedule — one brand per night, weekly cadence.
+#
+# WHY ONE BRAND PER NIGHT rather than one big run:
+#   savana   19,924 @ 8 rps  ≈ 42 min
+#   each competitor  @ 2 rps ≈ 2 h 46 min
+#   all five in one run      ≈ 11.5 h
+# An 11-hour job is a job that gets killed halfway, overlaps the next day, and
+# makes every brand's numbers a different age. Splitting it keeps each night
+# under three hours, isolates failures to one brand, and means a blocked
+# competitor never delays the Savana numbers you actually depend on.
+#
+# Install:  crontab -e   (or drop in /etc/cron.d/ with a user column)
+# Assumes:  repo at /opt/tatbench, python3 on PATH, logs to /var/log/tatbench/
+
+SHELL=/bin/bash
+PATH=/usr/local/bin:/usr/bin:/bin
+MAILTO=ops@example.com
+
+# --- nightly sweeps, 01:30 IST ---------------------------------------------
+30 1 * * 1  cd /opt/tatbench && python3 run.py --brands savana       >> /var/log/tatbench/savana.log 2>&1
+30 1 * * 2  cd /opt/tatbench && python3 run.py --brands myntra       >> /var/log/tatbench/myntra.log 2>&1
+30 1 * * 3  cd /opt/tatbench && python3 run.py --brands nykaafashion >> /var/log/tatbench/nykaa.log 2>&1
+30 1 * * 4  cd /opt/tatbench && python3 run.py --brands ajio         >> /var/log/tatbench/ajio.log 2>&1
+30 1 * * 5  cd /opt/tatbench && python3 run.py --brands meesho       >> /var/log/tatbench/meesho.log 2>&1
+
+# --- resume pass: picks up anything that died mid-sweep --------------------
+# Same command, same run-date key, so completed pincodes are skipped and only
+# failures are retried. Cheap when there is nothing to do.
+0 6 * * 1-5 cd /opt/tatbench && python3 run.py --brands savana,myntra,nykaafashion,ajio,meesho --date "$(date +\%F)" >> /var/log/tatbench/resume.log 2>&1
+
+# --- weekly report, Saturday 07:00 -----------------------------------------
+0 7 * * 6   cd /opt/tatbench && python3 analyse.py --detail --out /opt/tatbench/reports/$(date +\%F).md >> /var/log/tatbench/report.log 2>&1
+
+# --- preflight canary, daily 00:45 -----------------------------------------
+# Catches a dead endpoint, a SKU that lost its tiers, or a truncated pincode
+# list BEFORE the sweep burns three hours producing nothing. Non-zero exit
+# makes cron mail you.
+45 0 * * *  cd /opt/tatbench && python3 run.py --preflight >> /var/log/tatbench/preflight.log 2>&1
