@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Savana Delivery TAT Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+  :root {
+    --bg: #0f1117; --card: #171a23; --border: #262a36;
+    --text: #e8e9ee; --muted: #9298a8; --accent: #5b8cff; --warn: #e8a33d; --good: #4caf7d;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 24px 32px 64px;
+  }
+  h1 { font-size: 22px; margin-bottom: 2px; }
+  .meta { color: var(--muted); font-size: 13px; margin-bottom: 28px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; margin-bottom: 28px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; }
+  .card .label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 6px; }
+  .card .value { font-size: 26px; font-weight: 600; }
+  .card .sub { font-size: 12px; color: var(--muted); margin-top: 4px; }
+  .grid2 { display: grid; grid-template-columns: 1.1fr 1fr; gap: 18px; margin-bottom: 24px; }
+  @media (max-width: 900px) { .grid2 { grid-template-columns: 1fr; } }
+  .panel { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px; }
+  .panel h2 { font-size: 15px; margin: 0 0 14px; color: var(--text); }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--border); }
+  th { color: var(--muted); font-weight: 500; cursor: pointer; user-select: none; position: sticky; top: 0; background: var(--card); }
+  th:hover { color: var(--text); }
+  tbody tr:hover { background: rgba(255,255,255,0.03); }
+  .table-wrap { max-height: 480px; overflow-y: auto; }
+  input#citySearch {
+    width: 100%; padding: 8px 10px; margin-bottom: 10px; border-radius: 6px;
+    border: 1px solid var(--border); background: #10121a; color: var(--text); font-size: 13px;
+  }
+  .badge { display: inline-block; padding: 2px 7px; border-radius: 5px; font-size: 11px; font-weight: 600; }
+  .badge.good { background: rgba(76,175,125,.15); color: var(--good); }
+  .badge.warn { background: rgba(232,163,61,.15); color: var(--warn); }
+  .badge.bad { background: rgba(255,90,90,.15); color: #ff5a5a; }
+  #err { color: #ff8080; font-size: 13px; }
+</style>
+</head>
+<body>
+  <h1>Savana Delivery TAT Dashboard</h1>
+  <div class="meta" id="metaLine">Loading…</div>
+  <div id="err"></div>
+
+  <div class="cards" id="cards"></div>
+
+  <div class="grid2">
+    <div class="panel">
+      <h2>Fast delivery promise, over time</h2>
+      <canvas id="historyChart" height="200"></canvas>
+    </div>
+    <div class="panel">
+      <h2>Mean Fast TAT by state (worst-case day, latest)</h2>
+      <canvas id="stateChart" height="200"></canvas>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>City-wise breakdown</h2>
+    <input type="text" id="citySearch" placeholder="Filter by city or state…">
+    <div class="table-wrap">
+      <table id="cityTable">
+        <thead>
+          <tr>
+            <th data-key="city">City</th>
+            <th data-key="state">State</th>
+            <th data-key="pincode_count">Pincodes</th>
+            <th data-key="serviceability_pct">Serviceable %</th>
+            <th data-key="fast_mean_latest">Fast (mean, d)</th>
+            <th data-key="std_mean_latest">Standard (mean, d)</th>
+            <th data-key="fast_within_7d_pct">Fast ≤7d %</th>
+          </tr>
+        </thead>
+        <tbody id="cityBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+<script>
+let cityRows = [];
+let sortKey = "pincode_count";
+let sortDir = -1;
+
+function badge(pct, goodMin, warnMin) {
+  const cls = pct >= goodMin ? "good" : (pct >= warnMin ? "warn" : "bad");
+  return `<span class="badge ${cls}">${pct}%</span>`;
+}
+
+function renderCards(national, generatedAt, sourceRun) {
+  document.getElementById("metaLine").textContent =
+    `Last updated ${generatedAt} · source: ${sourceRun}`;
+  const cards = [
+    { label: "Fast, mean (latest)", value: national.fast_mean_latest ?? "—", sub: "days, worst-case" },
+    { label: "Fast ≤ 7 days", value: (national.fast_within_7d_pct ?? "—") + "%", sub: "share of serviceable pincodes" },
+    { label: "Standard, mean (latest)", value: national.std_mean_latest ?? "—", sub: "days, worst-case" },
+    { label: "Serviceability", value: (national.serviceability_pct ?? "—") + "%", sub: `${national.serviceable_count}/${national.pincode_count} pincodes` },
+    { label: "Both tiers offered", value: (national.both_tiers_pct ?? "—") + "%", sub: "of serviceable pincodes" },
+  ];
+  document.getElementById("cards").innerHTML = cards.map(c => `
+    <div class="card">
+      <div class="label">${c.label}</div>
+      <div class="value">${c.value}</div>
+      <div class="sub">${c.sub}</div>
+    </div>`).join("");
+}
+
+function renderHistoryChart(history) {
+  const ctx = document.getElementById("historyChart");
+  new Chart(ctx, {
+    type: "line",
+    data: {
+      labels: history.map(h => h.date.split(" ")[0]),
+      datasets: [
+        { label: "Fast mean (d)", data: history.map(h => h.fast_mean_latest), borderColor: "#5b8cff", tension: .25 },
+        { label: "Fast ≤7d %", data: history.map(h => h.fast_within_7d_pct), borderColor: "#4caf7d", tension: .25, yAxisID: "y2" },
+      ]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        y: { title: { display: true, text: "days" }, ticks: { color: "#9298a8" }, grid: { color: "#262a36" } },
+        y2: { position: "right", title: { display: true, text: "%" }, ticks: { color: "#9298a8" }, grid: { display: false } },
+        x: { ticks: { color: "#9298a8" }, grid: { color: "#262a36" } },
+      },
+      plugins: { legend: { labels: { color: "#e8e9ee" } } }
+    }
+  });
+}
+
+function renderStateChart(states) {
+  const top = states.filter(s => s.fast_mean_latest !== null).slice(0, 20);
+  const ctx = document.getElementById("stateChart");
+  new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: top.map(s => s.state),
+      datasets: [{ label: "Fast mean (d)", data: top.map(s => s.fast_mean_latest), backgroundColor: "#5b8cff" }]
+    },
+    options: {
+      indexAxis: "y",
+      responsive: true,
+      scales: {
+        x: { ticks: { color: "#9298a8" }, grid: { color: "#262a36" } },
+        y: { ticks: { color: "#9298a8" }, grid: { display: false } },
+      },
+      plugins: { legend: { display: false } }
+    }
+  });
+}
+
+function renderCityTable() {
+  const q = document.getElementById("citySearch").value.trim().toLowerCase();
+  let rows = cityRows.filter(r =>
+    !q || r.city.toLowerCase().includes(q) || r.state.toLowerCase().includes(q));
+  rows = rows.slice().sort((a, b) => {
+    const av = a[sortKey], bv = b[sortKey];
+    if (av === null || av === undefined) return 1;
+    if (bv === null || bv === undefined) return -1;
+    if (av < bv) return -1 * sortDir;
+    if (av > bv) return 1 * sortDir;
+    return 0;
+  });
+  document.getElementById("cityBody").innerHTML = rows.map(r => `
+    <tr>
+      <td>${r.city}</td>
+      <td>${r.state}</td>
+      <td>${r.pincode_count}</td>
+      <td>${badge(r.serviceability_pct, 99, 90)}</td>
+      <td>${r.fast_mean_latest ?? "—"}</td>
+      <td>${r.std_mean_latest ?? "—"}</td>
+      <td>${badge(r.fast_within_7d_pct ?? 0, 70, 30)}</td>
+    </tr>`).join("");
+}
+
+document.querySelectorAll("#cityTable th").forEach(th => {
+  th.addEventListener("click", () => {
+    const key = th.dataset.key;
+    sortDir = (sortKey === key) ? -sortDir : -1;
+    sortKey = key;
+    renderCityTable();
+  });
+});
+document.getElementById("citySearch").addEventListener("input", renderCityTable);
+
+async function load() {
+  try {
+    const [dataRes, histRes] = await Promise.all([
+      fetch("data.json"), fetch("history.json").catch(() => null)
+    ]);
+    if (!dataRes.ok) throw new Error("data.json not found — has the workflow run at least once?");
+    const data = await dataRes.json();
+    let history = [];
+    if (histRes && histRes.ok) history = await histRes.json();
+
+    renderCards(data.national, data.generated_at, data.source_run);
+    if (history.length) renderHistoryChart(history);
+    renderStateChart(data.by_state || []);
+    cityRows = data.by_city || [];
+    renderCityTable();
+  } catch (e) {
+    document.getElementById("err").textContent = "Couldn't load dashboard data: " + e.message;
+  }
+}
+load();
+</script>
+</body>
+</html>
