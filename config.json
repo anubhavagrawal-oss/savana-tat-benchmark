@@ -1,0 +1,78 @@
+{
+  "_comment": "tatbench config. Only 'savana' is implemented and enabled. Competitor brands are stubbed with conservative defaults and stay disabled until (a) an adapter exists and (b) ToS/legal sign-off is recorded in README section 6.",
+
+  "pincodes": "pincodes_tms_master.csv",
+  "data_root": "data",
+
+  "brands": {
+    "savana": {
+      "enabled": true,
+      "sku": "2345362",
+      "_sku_note": "MUST offer both fast and standard. Verified 11 Sep 2026: 2345362 and 2306342 do; 2127792 is standard-only and 2247692 fast-only (both were the other way round in June). Preflight re-checks every run.",
+      "rps": 8.0,
+      "workers": 6,
+      "timeout": 20,
+      "retries": 3,
+      "probe_pincode": "110001",
+      "require_both_tiers": true,
+      "error_threshold": 0.35,
+      "breaker_min_samples": 200
+    },
+
+    "myntra": {
+      "enabled": false,
+      "_status": "NO ADAPTER YET. See DISCOVERY.md. Expect the hardest of the four - strong bot protection, may be session-bound.",
+      "sku": "",
+      "rps": 2.0,
+      "workers": 3,
+      "timeout": 25,
+      "retries": 3,
+      "probe_pincode": "110001",
+      "require_both_tiers": false,
+      "error_threshold": 0.25,
+      "breaker_min_samples": 150
+    },
+
+    "nykaafashion": {
+      "enabled": false,
+      "_status": "NO ADAPTER YET. Nykaa Beauty and Nykaa Fashion are SEPARATE storefronts with different serviceability - pick the one that matches the category you are benchmarking.",
+      "sku": "",
+      "rps": 2.0,
+      "workers": 3,
+      "timeout": 25,
+      "retries": 3,
+      "probe_pincode": "110001",
+      "require_both_tiers": false,
+      "error_threshold": 0.25,
+      "breaker_min_samples": 150
+    },
+
+    "ajio": {
+      "enabled": false,
+      "_status": "NO ADAPTER YET. Reliance-owned, strong in tier-2/3 - the most interesting comparison for the regions where Savana is slowest.",
+      "sku": "",
+      "rps": 2.0,
+      "workers": 3,
+      "timeout": 25,
+      "retries": 3,
+      "probe_pincode": "110001",
+      "require_both_tiers": false,
+      "error_threshold": 0.25,
+      "breaker_min_samples": 150
+    },
+
+    "meesho": {
+      "enabled": false,
+      "_status": "NO ADAPTER YET. Closest comparison on value fashion and COD-heavy tier-2/3.",
+      "sku": "",
+      "rps": 2.0,
+      "workers": 3,
+      "timeout": 25,
+      "retries": 3,
+      "probe_pincode": "110001",
+      "require_both_tiers": false,
+      "error_threshold": 0.25,
+      "breaker_min_samples": 150
+    }
+  }
+}
