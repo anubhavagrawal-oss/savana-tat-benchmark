@@ -1,0 +1,40 @@
+name: Weekly TAT sweep (Savana)
+
+on:
+  schedule:
+    # 01:30 IST Monday = 20:00 UTC Sunday
+    - cron: '0 20 * * 0'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Preflight
+        run: python3 run.py --preflight
+
+      - name: Full sweep (savana)
+        run: python3 run.py --brands savana
+
+      - name: Analyse + write report
+        run: |
+          mkdir -p reports
+          python3 analyse.py --detail --out "reports/$(date -u +%F).md"
+
+      - name: Commit results back to repo
+        run: |
+          git config user.name "tatbench-bot"
+          git config user.email "actions@github.com"
+          git add data/ reports/
+          git diff --cached --quiet || git commit -m "Weekly sweep: $(date -u +%F)"
+          git push
