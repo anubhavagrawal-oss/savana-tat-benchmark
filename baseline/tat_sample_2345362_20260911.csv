@@ -1,0 +1,426 @@
+pincode,city,state,region,fast_min,fast_max,std_min,std_max
+110049,Delhi,Delhi (UT),North,5,8,10,13
+110117,Delhi,Delhi (UT),North,3,5,9,11
+110121,Delhi,Delhi (UT),North,3,5,9,11
+110506,Delhi,Delhi (UT),North,3,5,9,11
+110608,Delhi,Delhi (UT),North,3,5,9,11
+122098,Gurgaon,Haryana,North,4,6,10,12
+122101,Gurgaon,Haryana,North,3,6,9,12
+122225,Gurgaon,Haryana,North,3,5,9,11
+123031,Mahendragarh-HR,Haryana,North,4,8,10,14
+123034,Rewari,Haryana,North,6,9,11,14
+125033,Hansi,Haryana,North,6,9,10,14
+131001,Sonipat,Haryana,North,6,9,10,14
+131304,Gohana,Haryana,North,6,9,10,14
+132101,Panipat,Haryana,North,6,9,10,14
+132117,Karnal,Haryana,North,6,9,10,14
+134104,Pinjore,Haryana,North,5,8,11,14
+134113,Chandigarh,Haryana,North,3,6,9,12
+136042,Kaithal,Haryana,North,6,9,10,14
+140105,Zirakpur,Punjab,North,4,7,10,13
+140118,Anandpur Sahib,Punjab,North,4,8,10,14
+140401,Rajpura,Punjab,North,6,9,11,14
+140412,Sirhind-Fategarh,Punjab,North,6,9,11,14
+140601,Rajpura,Punjab,North,4,8,10,14
+141011,Ludhiana,Punjab,North,5,7,9,13
+141015,Ludhiana,Punjab,North,3,6,9,12
+142055,Bhadaur,Punjab,North,6,9,10,14
+143115,Tarn Taran Sahib,Punjab,North,6,9,11,14
+143201,Kapurthala,Punjab,North,5,8,11,14
+143515,Sri Hargobindpur,Punjab,North,7,8,13,14
+143526,Gurdaspur,Punjab,North,6,9,10,14
+144041,Nakodar,Punjab,North,6,9,10,14
+144311,Phagwara,Punjab,North,4,6,10,12
+144703,Dharamkot,Punjab,North,5,8,11,14
+147004,Patiala,Punjab,North,4,6,10,12
+147201,Nabha,Punjab,North,4,8,10,14
+148017,Dhuri,Punjab,North,3,5,9,11
+151006,Bathinda,Punjab,North,4,7,10,13
+151211,Mandi Dabwali,Punjab,North,4,6,10,12
+151504,Jhunir,Punjab,North,6,9,10,14
+160011,Chandigarh,Chandigarh (UT),North,3,6,9,12
+160036,Chandigarh,Chandigarh (UT),North,3,6,9,12
+160053,Chandigarh,Chandigarh (UT),North,5,7,10,13
+160059,Chandigarh,Chandigarh (UT),North,6,9,10,14
+160071,Chandigarh,Chandigarh (UT),North,6,9,10,14
+171019,Shimla,Himachal Pradesh,North,4,6,10,13
+171220,Theog,Himachal Pradesh,North,4,8,10,14
+172021,Nankhari,Himachal Pradesh,North,6,8,12,15
+172101,Jeori,Himachal Pradesh,North,5,8,11,14
+174029,Ghumarwin,Himachal Pradesh,North,4,8,10,14
+174302,Una-HP,Himachal Pradesh,North,5,8,11,14
+174405,Bhota,Himachal Pradesh,North,4,6,10,13
+175012,Joginder Nagar,Himachal Pradesh,North,5,8,11,14
+175126,Kullu,Himachal Pradesh,North,6,9,11,14
+176076,Kachhera,Himachal Pradesh,North,5,7,11,13
+176110,Sujanpur,Himachal Pradesh,North,6,9,11,14
+177103,Dehra Gopipur,Himachal Pradesh,North,4,8,10,14
+177212,Amb,Himachal Pradesh,North,4,8,10,14
+177301,Nadaun,Himachal Pradesh,North,4,8,10,14
+180005,Jammu,Jammu & Kashmir (UT),North,4,8,10,14
+180020,Jammu,Jammu & Kashmir (UT),North,4,7,10,13
+181131,RS Pura,Jammu & Kashmir (UT),North,5,8,11,14
+184143,Kathua,Jammu & Kashmir (UT),North,4,8,10,14
+185234,Rajouri,Jammu & Kashmir (UT),North,5,7,11,13
+194101,Leh,Ladakh (UT),North,9,12,15,19
+201000,Ghaziabad,Uttar Pradesh,North,3,6,9,12
+201102,LoniUP,Uttar Pradesh,North,6,9,10,14
+201303,Noida,Uttar Pradesh,North,5,8,10,13
+201312,Noida,Uttar Pradesh,North,3,6,9,12
+203390,Anupshahar,Uttar Pradesh,North,4,8,10,14
+203408,Hapur,Uttar Pradesh,North,6,9,10,14
+205303,Kishni,Uttar Pradesh,North,6,9,11,14
+206253,Etawah,Uttar Pradesh,North,3,7,9,13
+208002,Kanpur,Uttar Pradesh,North,7,10,12,15
+208003,Kanpur,Uttar Pradesh,North,5,8,11,14
+209202,Rasulabad,Uttar Pradesh,North,4,8,10,14
+209205,Kanpur,Uttar Pradesh,North,3,7,9,13
+209602,Farrukhabad,Uttar Pradesh,North,4,8,10,14
+209721,Chhibramau,Uttar Pradesh,North,5,8,11,14
+211008,Allahabad,Uttar Pradesh,North,5,8,11,14
+212107,Shankargarh,Uttar Pradesh,North,6,8,12,14
+212109,Soraon,Uttar Pradesh,North,5,8,11,14
+212204,Sirathu,Uttar Pradesh,North,5,8,11,14
+212307,Allahabad,Uttar Pradesh,North,5,8,11,14
+212655,Khaga,Uttar Pradesh,North,5,8,11,14
+212657,Ambuj Nagar,Uttar Pradesh,North,5,8,11,14
+212662,Allahabad,Uttar Pradesh,North,4,7,10,13
+212664,Ambuj Nagar,Uttar Pradesh,North,5,8,11,14
+221705,Ratanpura,Uttar Pradesh,North,3,6,9,12
+222203,Bhadohi,Uttar Pradesh,North,5,8,11,14
+224210,Tanda,Uttar Pradesh,North,5,8,11,14
+225002,Barabanki,Uttar Pradesh,North,3,7,9,13
+226010,Lucknow,Uttar Pradesh,North,6,10,11,15
+226018,Lucknow,Uttar Pradesh,North,6,10,11,15
+229103,Bacchawaran,Uttar Pradesh,North,6,8,12,14
+229205,Lalganj,Uttar Pradesh,North,5,8,11,14
+229401,Unchahar,Uttar Pradesh,North,5,8,11,14
+229402,Unchahar,Uttar Pradesh,North,5,7,11,13
+229410,Salon,Uttar Pradesh,North,5,8,11,14
+230142,Patti-UP,Uttar Pradesh,North,4,8,10,14
+231205,Chopan,Uttar Pradesh,North,6,9,11,14
+231206,Robertsganj,Uttar Pradesh,North,6,8,12,14
+231208,Dudhinagar,Uttar Pradesh,North,6,9,11,14
+232332,Ghazipur,Uttar Pradesh,North,6,8,12,14
+241124,Shahabad,Uttar Pradesh,North,4,6,10,12
+241303,Madhoganj,Uttar Pradesh,North,5,8,11,14
+243006,Bareilly,Uttar Pradesh,North,4,8,10,14
+244102,Amroha,Uttar Pradesh,North,6,9,10,14
+246125,Pauri,Uttarakhand,North,4,6,10,12
+246162,Gumkhal,Uttarakhand,North,4,8,10,14
+246473,Chamoli,Uttarakhand,North,6,8,12,14
+246729,Chandpur,Uttarakhand,North,4,7,10,13
+246761,Dhampur,Uttarakhand,North,6,9,10,14
+249124,Tehri,Uttarakhand,North,4,8,10,14
+250004,Meerut,Uttar Pradesh,North,6,10,11,15
+250222,Daurala,Uttar Pradesh,North,6,9,11,14
+250621,Baraut,Uttar Pradesh,North,6,9,10,14
+261141,Maholi,Uttar Pradesh,North,5,8,11,14
+261501,Lakhimpur,Uttar Pradesh,North,5,7,11,13
+262804,Gola,Uttar Pradesh,North,4,6,10,12
+263148,Rudrapur,Uttarakhand,North,6,9,10,14
+271206,Tulsipur,Uttar Pradesh,North,5,8,11,14
+271210,Tulsipur,Uttar Pradesh,North,5,8,11,14
+272126,Basti,Uttar Pradesh,North,5,8,11,14
+272163,Itava,Uttar Pradesh,North,6,8,12,14
+273161,Anandnagar,Uttar Pradesh,North,4,6,10,12
+273165,Anandnagar,Uttar Pradesh,North,5,8,11,14
+274305,Kaptanganj,Uttar Pradesh,North,4,8,10,14
+276124,Jiyanpur,Uttar Pradesh,North,5,7,11,13
+276208,Nizamabad-UP,Uttar Pradesh,North,5,7,11,13
+277203,Ballia,Uttar Pradesh,North,6,8,12,14
+281305,Mathura,Uttar Pradesh,North,4,8,10,14
+282002,Agra,Uttar Pradesh,North,6,9,11,14
+301031,Alwar,Rajasthan,North,4,7,10,13
+302023,Jaipur,Rajasthan,North,4,8,10,14
+302024,Jaipur,Rajasthan,North,4,8,10,14
+302041,Jaipur,Rajasthan,North,4,8,10,14
+303325,Bandikui,Rajasthan,North,4,8,10,14
+303340,Phulera,Rajasthan,North,4,8,10,14
+303704,Jaipur,Rajasthan,North,6,9,10,14
+305006,Ajmer,Rajasthan,North,3,5,9,11
+305601,Nasirabad,Rajasthan,North,4,8,10,14
+305925,Beawar,Rajasthan,North,4,7,10,13
+306116,Falna,Rajasthan,North,5,8,11,14
+306306,Sojat,Rajasthan,North,5,8,11,14
+311024,Raila,Rajasthan,North,5,8,11,14
+311602,Mandalgarh,Rajasthan,North,5,8,11,14
+312203,Kapasan,Rajasthan,North,6,8,12,14
+313205,Fatehnagar,Rajasthan,North,5,8,11,14
+313211,Fatehnagar,Rajasthan,North,5,8,11,14
+313601,Bhatewar,Rajasthan,North,5,8,11,14
+321603,Bharatpur,Rajasthan,North,4,8,10,14
+322212,Nadoti,Rajasthan,North,5,7,11,13
+326513,Bhawani Mandi,Rajasthan,North,4,8,10,14
+326530,Ramganj Mandi,Rajasthan,North,6,9,11,14
+327022,Sagwara,Rajasthan,North,5,8,11,14
+327606,Kushalgarh,Rajasthan,North,5,8,11,14
+328030,Dholpur,Rajasthan,North,3,4,9,10
+331301,Bahal,Rajasthan,North,4,6,10,12
+331306,Pilani,Rajasthan,North,4,8,10,14
+331506,Sujangarh,Rajasthan,North,4,8,10,14
+341023,Tarnau,Rajasthan,North,5,8,11,14
+341306,Sujangarh,Rajasthan,North,4,8,10,14
+341318,Khatu Khurd,Rajasthan,North,4,6,10,12
+342014,Jodhpur,Rajasthan,North,4,8,10,14
+344027,Balotra,Rajasthan,North,4,8,10,14
+360370,Jetpur,Gujarat,West,5,8,11,15
+361141,Jamnagar,Gujarat,West,6,9,12,15
+361320,Bhatiya,Gujarat,West,5,8,11,14
+361330,Dwarka,Gujarat,West,3,7,9,13
+362222,Keshod,Gujarat,West,6,9,12,15
+362266,Veraval,Gujarat,West,6,9,12,15
+362267,Veraval,Gujarat,West,6,8,12,14
+362540,UNA,Gujarat,West,5,8,11,14
+362630,Manavadar,Gujarat,West,5,8,11,15
+364055,Bhavnagar,Gujarat,West,5,9,11,16
+364210,Sihor,Gujarat,West,5,9,11,15
+365456,Amreli,Gujarat,West,6,9,12,15
+370675,Nakhatrana,Gujarat,West,6,9,12,15
+380051,Ahmedabad,Gujarat,West,4,8,10,14
+380052,Ahmedabad,Gujarat,West,4,7,10,13
+382015,Gandhinagar,Gujarat,West,5,7,11,13
+382029,Gandhinagar,Gujarat,West,5,9,11,15
+382213,Bavla,Gujarat,West,5,9,11,15
+382327,Ahmedabad,Gujarat,West,5,7,11,13
+382465,Dhandhuka,Gujarat,West,6,9,12,15
+382735,Gandhinagar,Gujarat,West,5,7,11,13
+383220,Himmatnagar,Gujarat,West,6,8,12,14
+383310,Modasa,Gujarat,West,6,8,12,14
+383320,Modasa,Gujarat,West,6,9,12,15
+384122,Unjha,Gujarat,West,5,8,11,15
+384255,Patan,Gujarat,West,8,11,14,17
+384271,Patan,Gujarat,West,5,8,11,15
+384421,Mehsana,Gujarat,West,6,8,12,14
+388590,Vatadara,Gujarat,West,6,9,12,15
+389365,Halol,Gujarat,West,7,11,13,17
+390006,Vadodara,Gujarat,West,5,8,11,14
+391245,Karjan,Gujarat,West,6,9,12,15
+391740,Vadodara,Gujarat,West,5,9,11,15
+391750,Vadodara,Gujarat,West,5,9,11,15
+393010,Ankleshwar,Gujarat,West,6,9,12,16
+394345,Bardoli,Gujarat,West,5,7,11,13
+394405,Ankleshwar,Gujarat,West,5,7,11,13
+394633,Vyara,Gujarat,West,4,9,11,14
+396030,Valsad,Gujarat,West,5,8,11,14
+396120,Vapi,Gujarat,West,6,8,12,14
+396192,Silvassa-DNH,DNH & Daman & Diu (UT),West,5,9,11,15
+396210,Daman,DNH & Daman & Diu (UT),West,6,9,12,15
+396235,Silvassa-DNH,DNH & Daman & Diu (UT),West,6,9,12,15
+396238,Silvassa-DNH,DNH & Daman & Diu (UT),West,6,9,12,15
+396240,Silvassa-DNH,DNH & Daman & Diu (UT),West,6,9,12,15
+400026,Mumbai,Maharashtra,West,5,9,10,15
+400030,Mumbai,Maharashtra,West,6,9,11,15
+400037,Mumbai,Maharashtra,West,7,11,12,17
+400047,Mumbai,Maharashtra,West,6,10,11,16
+400065,Mumbai,Maharashtra,West,6,9,11,15
+400072,Mumbai,Maharashtra,West,4,8,10,15
+400075,Mumbai,Maharashtra,West,6,10,11,16
+400095,Mumbai,Maharashtra,West,4,8,10,15
+400704,Jasai,Maharashtra,West,5,9,11,16
+401101,Thane,Maharashtra,West,6,9,11,15
+401102,Saphale,Maharashtra,West,6,9,12,16
+401107,Thane,Maharashtra,West,6,10,11,16
+401200,Mumbai,Maharashtra,West,5,7,11,13
+401205,Mumbai,Maharashtra,West,5,7,11,13
+401210,Mumbai,Maharashtra,West,4,7,10,13
+401403,Palghar,Maharashtra,West,7,9,13,16
+401606,Talasari,Maharashtra,West,6,9,12,16
+403110,Goa,Goa,West,6,9,12,15
+403504,Goa,Goa,West,6,9,12,15
+403530,Goa,Goa,West,7,11,13,18
+403723,Goa,Goa,West,6,9,12,16
+403806,Goa,Goa,West,6,9,12,15
+410405,Lonavala,Maharashtra,West,6,9,12,16
+410515,Ambegaon,Maharashtra,West,5,7,11,13
+411000,Pune,Maharashtra,West,5,8,11,15
+411004,Pune,Maharashtra,West,5,9,11,16
+415103,Karad,Maharashtra,West,6,9,12,16
+415104,Karad,Maharashtra,West,7,11,13,18
+415203,Mandangad,Maharashtra,West,6,8,12,15
+415403,Islampur,Maharashtra,West,3,7,9,13
+415511,Satara,Maharashtra,West,6,9,12,16
+415540,Mhaswad,Maharashtra,West,6,9,12,16
+415615,Ratnagiri,Maharashtra,West,6,8,12,15
+415708,Khed,Maharashtra,West,6,9,12,16
+415804,Sangameshwar,Maharashtra,West,7,11,13,18
+416004,Kolhapur,Maharashtra,West,6,9,12,16
+416236,Kolhapur,Maharashtra,West,7,9,13,16
+416528,Sawantwadi,Maharashtra,West,7,9,13,16
+416550,Sawantwadi,Maharashtra,West,6,9,12,16
+421032,Mumbai,Maharashtra,West,5,7,11,13
+421103,Greater Thane,Maharashtra,West,4,8,10,15
+421401,Murbad,Maharashtra,West,6,9,12,16
+422201,Saikheda,Maharashtra,West,3,7,9,13
+423110,Chandwad,Maharashtra,West,5,8,11,15
+424202,Pachora,Maharashtra,West,6,9,12,16
+425327,Malkapur,Maharashtra,West,5,9,11,16
+425424,Shahada,Maharashtra,West,6,9,12,16
+425428,Shirpur,Maharashtra,West,5,8,11,15
+425513,Raver,Maharashtra,West,5,9,11,15
+431009,Aurangabad,Maharashtra,West,6,9,12,16
+431123,Kaij,Maharashtra,West,10,11,16,18
+431213,Jalna,Maharashtra,West,6,9,12,16
+431518,Kaij,Maharashtra,West,6,9,12,16
+431743,Umarkhed,Maharashtra,West,6,9,12,16
+431809,Dharmabad,Maharashtra,West,6,9,12,16
+441104,Umred,Maharashtra,West,5,9,11,16
+441122,Nagpur,Maharashtra,West,5,9,11,16
+441225,Mul,Maharashtra,West,6,8,12,15
+441305,Katol,Maharashtra,West,6,9,12,16
+442203,Talegaon Sp,Maharashtra,West,7,9,13,16
+442304,Hinganghat,Maharashtra,West,6,9,12,16
+442501,Bhadravati,Maharashtra,West,6,8,12,15
+444720,Paratwada,Maharashtra,West,7,9,13,16
+444804,Amravati,Maharashtra,West,6,9,12,16
+451010,Khargone,Madhya Pradesh,Central,4,6,10,12
+451228,Thikri,Madhya Pradesh,Central,6,8,12,14
+453661,Pithampur,Madhya Pradesh,Central,5,8,11,14
+454111,Sardarpur,Madhya Pradesh,Central,5,9,11,15
+455339,Khategaon,Madhya Pradesh,Central,3,7,9,13
+461221,Seoni Malwa,Madhya Pradesh,Central,5,7,11,13
+462014,Bhopal,Madhya Pradesh,Central,5,9,11,15
+464668,Bareli,Madhya Pradesh,Central,5,8,11,14
+465227,Shujalpur,Madhya Pradesh,Central,5,9,11,15
+470120,Rahatgarh,Madhya Pradesh,Central,7,11,13,17
+472246,Prithvipur,Madhya Pradesh,Central,4,6,10,12
+473118,Binaganj,Madhya Pradesh,Central,3,6,9,12
+473330,Ashok Nagar,Madhya Pradesh,Central,5,7,11,13
+473774,Shivpuri,Madhya Pradesh,Central,4,6,10,12
+473990,Pichhore,Madhya Pradesh,Central,6,10,12,16
+474011,Gwalior,Madhya Pradesh,Central,4,8,10,14
+475685,Datia,Madhya Pradesh,Central,5,9,11,15
+476134,Morena,Madhya Pradesh,Central,5,9,11,15
+477557,Bhind,Madhya Pradesh,Central,4,6,10,12
+480991,Mandla,Madhya Pradesh,Central,7,11,13,17
+481449,Katangi,Madhya Pradesh,Central,6,9,12,15
+481882,Bajag,Madhya Pradesh,Central,6,9,12,15
+483990,Raipura,Madhya Pradesh,Central,6,9,12,15
+485004,Satna,Madhya Pradesh,Central,6,9,12,15
+485113,Satna,Madhya Pradesh,Central,5,7,11,13
+486340,Sohagi,Madhya Pradesh,Central,5,7,11,13
+486881,Deosar,Madhya Pradesh,Central,5,8,11,14
+488443,Raipura,Madhya Pradesh,Central,3,7,9,13
+490006,Bhilai,Chhattisgarh,Central,5,7,11,14
+492012,Raipur,Chhattisgarh,Central,5,8,11,15
+493113,Bhatapara,Chhattisgarh,Central,5,7,11,14
+493445,Mahasamund,Chhattisgarh,Central,6,9,12,16
+494449,Dantewada,Chhattisgarh,Central,6,8,12,15
+495115,Mungeli,Chhattisgarh,Central,6,9,12,16
+495444,Korba,Chhattisgarh,Central,5,8,11,15
+495695,Sakti,Chhattisgarh,Central,7,10,13,17
+496661,Sakti,Chhattisgarh,Central,6,9,12,16
+497220,Ramanujganj,Chhattisgarh,Central,6,8,12,15
+500042,Hyderabad,Telangana,South,5,7,11,13
+500066,Hyderabad,Telangana,South,5,9,11,15
+500267,Hyderabad,Telangana,South,5,8,11,14
+501203,Chevella,Telangana,South,6,9,12,15
+501301,Ghatkesar,Telangana,South,7,11,13,17
+502228,Zahirabad,Telangana,South,7,9,13,15
+502301,Pregnapur,Telangana,South,6,9,12,15
+502303,Medak,Telangana,South,5,9,11,15
+502316,Narsapur-TS,Telangana,South,5,9,11,15
+502325,Bachupally,Telangana,South,7,11,13,17
+502345,Zahirabad,Telangana,South,7,11,13,17
+503174,Nizamabad,Telangana,South,5,9,11,15
+503206,Bodhan,Telangana,South,3,7,9,13
+504102,Bhainsa,Telangana,South,6,9,12,15
+504311,Utnoor,Telangana,South,8,9,14,15
+505129,Jammikunta,Telangana,South,9,11,15,17
+505325,Metpally,Telangana,South,7,11,13,17
+505481,Karim Nagar,Telangana,South,8,9,14,15
+506003,Warangal,Telangana,South,6,9,12,15
+506164,Parkal,Telangana,South,6,9,12,15
+507157,Kusumanchi,Telangana,South,6,9,12,15
+509001,Mahabubnagar,Telangana,South,6,9,12,15
+509351,Mahabubnagar,Telangana,South,3,7,9,13
+515271,Madakasira,Andhra Pradesh,South,6,9,12,15
+515411,Tadipatri,Andhra Pradesh,South,8,11,14,17
+515531,Kadiri,Andhra Pradesh,South,6,9,12,15
+515671,Dharmavaram,Andhra Pradesh,South,7,11,13,17
+515822,Uravakonda,Andhra Pradesh,South,6,9,12,15
+516003,Cuddapah,Andhra Pradesh,South,6,9,12,15
+516321,Proddatur,Andhra Pradesh,South,7,9,13,15
+516356,Proddatur,Andhra Pradesh,South,6,9,12,15
+517352,Madanapalle,Andhra Pradesh,South,8,11,14,17
+517422,Chittoor,Andhra Pradesh,South,6,9,12,15
+518001,Kurnool,Andhra Pradesh,South,7,11,13,17
+518112,Nandyal,Andhra Pradesh,South,7,9,13,15
+520006,Vijayawada,Andhra Pradesh,South,6,9,12,15
+521123,Nuzvid,Andhra Pradesh,South,6,9,12,15
+521149,Machilipatnam,Andhra Pradesh,South,6,9,12,15
+521157,Pamarru,Andhra Pradesh,South,7,11,13,17
+521331,Machilipatnam,Andhra Pradesh,South,6,9,12,15
+522268,Repalle,Andhra Pradesh,South,6,9,12,15
+522529,Guntur,Andhra Pradesh,South,6,8,12,14
+523002,Ongole,Andhra Pradesh,South,6,9,12,15
+523165,Chirala,Andhra Pradesh,South,6,9,12,15
+523180,Ongole,Andhra Pradesh,South,6,9,12,15
+523186,Ongole,Andhra Pradesh,South,6,9,12,15
+523368,Giddalur,Andhra Pradesh,South,6,9,12,15
+524126,Atmakur-AP,Andhra Pradesh,South,6,9,12,15
+524203,Kavali,Andhra Pradesh,South,6,9,12,15
+530018,Visakhapatnam,Andhra Pradesh,South,6,9,12,15
+531002,Anakapalle,Andhra Pradesh,South,7,9,13,15
+531084,Narsipatnam,Andhra Pradesh,South,8,11,14,17
+532263,Palasa-Kasibugga,Andhra Pradesh,South,7,9,13,15
+532425,Narasannapeta,Andhra Pradesh,South,6,9,12,15
+533252,Razole,Andhra Pradesh,South,7,9,13,15
+533263,Draksharamam,Andhra Pradesh,South,8,9,14,15
+533285,Gokavaram,Andhra Pradesh,South,6,9,12,15
+533290,Gokavaram,Andhra Pradesh,South,6,9,12,15
+533436,Koyyuru,Andhra Pradesh,South,7,9,13,15
+533440,Samarlakota,Andhra Pradesh,South,6,9,12,15
+533460,Samarlakota,Andhra Pradesh,South,6,9,12,15
+534202,Bhimavaram,Andhra Pradesh,South,7,11,13,17
+534338,Palakollu,Andhra Pradesh,South,3,6,9,12
+535004,Vizianagaram,Andhra Pradesh,South,6,9,12,15
+560014,Bangalore,Karnataka,South,6,10,11,16
+560033,Bangalore,Karnataka,South,6,9,11,15
+560075,Bangalore,Karnataka,South,6,10,11,16
+560077,Bangalore,Karnataka,South,6,9,11,15
+562164,Chikkaballapura,Karnataka,South,6,8,12,14
+563116,Bethamangala,Karnataka,South,5,8,11,14
+563117,Bangarapet,Karnataka,South,7,11,13,17
+563161,Mulbagal,Karnataka,South,6,9,12,15
+571117,Chamarajanagar,Karnataka,South,6,9,12,15
+571146,Chamarajanagar,Karnataka,South,6,9,12,15
+571434,Srirangapatna,Karnataka,South,7,9,13,15
+572104,Tumkur,Karnataka,South,7,11,13,17
+572213,Kunigal,Karnataka,South,6,9,12,15
+573112,Arsikere,Karnataka,South,8,11,14,18
+573131,Channarayapatna,Karnataka,South,6,9,12,15
+573216,Hassan,Karnataka,South,7,11,13,17
+573225,Channarayapatna,Karnataka,South,6,8,12,15
+574151,Mangalore,Karnataka,South,7,11,13,17
+574231,Bantwal,Karnataka,South,6,9,12,15
+574266,Moodabidri,Karnataka,South,6,9,12,15
+576219,Byndoor,Karnataka,South,6,8,12,14
+576283,Kundapura,Karnataka,South,6,8,12,14
+577113,Mudigere,Karnataka,South,7,9,13,15
+577204,Shimoga,Karnataka,South,7,11,13,18
+577216,Shimoga,Karnataka,South,8,9,14,15
+577221,Channagiri,Karnataka,South,6,9,12,15
+577517,Jagaluru,Karnataka,South,6,9,12,15
+577542,Hosadurga,Karnataka,South,6,9,12,15
+577547,Kadur,Karnataka,South,6,9,12,16
+577553,Jagaluru,Karnataka,South,6,9,12,16
+580027,Hubli,Karnataka,South,6,8,12,14
+581306,Karwar,Karnataka,South,6,9,12,15
+581332,Kumta,Karnataka,South,6,9,12,15
+581338,Honnavar,Karnataka,South,7,9,13,15
+581359,Yellapur,Karnataka,South,6,9,12,16
+583152,Bellary,Karnataka,South,6,9,12,15
+583202,Hospet,Karnataka,South,6,9,12,15
+583212,Hagaribommanahalli,Karnataka,South,6,9,12,16
+583278,Kushtagi,Karnataka,South,6,9,12,15
+584139,Lingasugur,Karnataka,South,6,9,12,15
+584170,Raichur,Karnataka,South,7,11,13,17
+585103,Gulbarga,Karnataka,South,7,11,13,18
+585228,Chittapur,Karnataka,South,6,8,12,14
+585333,Ilkal,Karnataka,South,6,9,12,16
+587135,Jamkhandi,Karnataka,South,6,9,12,15
+590004,Belgaum,Karnataka,South,7,9,13,15
+591119,Bailhongal,Karnataka,South,7,9,13,15
+591173,Athani,Karnataka,South,6,9,12,15
+591201,Chikodi,Karnataka,South,7,9,13,15
