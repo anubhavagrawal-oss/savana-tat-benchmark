@@ -40,5 +40,12 @@
     "std_mean_latest": 15.17,
     "fast_within_7d_pct": 21.5,
     "serviceability_pct": 98.6
+  },
+  {
+    "date": "2026-11-09 00:11 UTC",
+    "fast_mean_latest": 9.27,
+    "std_mean_latest": 14.53,
+    "fast_within_7d_pct": 8.4,
+    "serviceability_pct": 98.6
   }
 ]
